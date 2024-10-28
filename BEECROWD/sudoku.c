@@ -30,7 +30,6 @@ int teste_Linhas(int m[9][9]){
 	int l=0, k=0, i=0;
 	for(l=0;l<9;l++){
         	for(k=0;k<9;k++){
-            		if(m[l][k]<1 || m[l][k]>9) return 0;
             		for(i=0;i<k;i++){
                 		if(m[l][i]==m[l][k]) return 0;
             		}
