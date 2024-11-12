@@ -84,7 +84,7 @@ void imprime_lst(amigos *p) {
     while (r != NULL) {
         printf("%s", r->nome);
         if (r->seg != NULL) printf(" ");
-        r = r->seg;
+        r=r->seg;
     }
     printf("\n");
 }
@@ -92,8 +92,8 @@ void imprime_lst(amigos *p) {
 void libera_lst(amigos *p) {
     amigos *temp;
     while (p != NULL) {
-        temp = p;
-        p = p->seg;
+        temp=p;
+        p=p->seg;
         free(temp);
     }
 }
