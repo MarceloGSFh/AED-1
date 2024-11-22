@@ -36,9 +36,8 @@ void ordena_lst(lista_chamada *lst){
 void imprime_k(lista_chamada *lst, int k){
     int i=1;
     lista_chamada *p=lst;
-    while(p!=NULL && i<k){
+    for(i=1; i<k; i++){
         p=p->prox;
-        i++;
     }
      printf("%s\n", p->aluno);
 }
