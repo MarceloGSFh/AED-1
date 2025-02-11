@@ -19,7 +19,12 @@ int main() {
             }
         }
         for (int i = 30; i <= 60; i++) {
-            par += (b[i][0] < b[i][1]) ? b[i][0] : b[i][1];
+            if (b[i][0] < b[i][1]) {
+                par += b[i][0]; 
+            }
+            else {
+                par += b[i][1];
+            }
         }
         printf("%d\n", par);
     }
